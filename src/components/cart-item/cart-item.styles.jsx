@@ -1,4 +1,8 @@
-.cart-item {
+import styled from 'styled-components';
+
+
+export const CartItemContainer = styled.div`
+
   width: 100%;
   display: flex;
   height: 80px;
@@ -8,16 +12,18 @@
     width: 30%;
   }
 
-  .item-details {
-    width: 70%;
+`;
+export const ItemDetailContainer = styled.div`
+
+width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding: 10px 20px;
+`;
 
-    .name {
-      font-size: 16px;
-    }
-  }
-}
+export const NameContainer = styled.span`
+ font-size: 16px;
+`;
+
