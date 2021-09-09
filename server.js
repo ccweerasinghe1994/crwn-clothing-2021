@@ -32,6 +32,7 @@ app.post("/payment", (req, res) => {
     currency: "usd",
   };
 
+  console.log(body);
   stripe.charges.create(body, (stripeError, stripeResponse) => {
     if (stripeError) {
       res.status(500).send({ error: stripeError });
