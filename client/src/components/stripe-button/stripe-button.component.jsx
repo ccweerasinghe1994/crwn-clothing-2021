@@ -9,14 +9,14 @@ const StripeCheckoutButton = ({ price }) => {
     axios({
       url: "payment",
       method: "post",
-      token: token,
+      data: { token: token, amount: priceForStripe },
     })
       .then((response) => alert("payment successful"))
       .catch((error) => {
-        console.log(JSON.parse(error));
         alert(
           "THERE IS A ISSUE WITH THE PAYMENT PLEASE USE THE PROVIDED CREDIT CARD"
         );
+        console.log(JSON.parse(error));
       });
   };
   return (
