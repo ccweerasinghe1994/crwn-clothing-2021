@@ -1,1 +1,1 @@
-![img](Documentation\images\img1.png)
+![img](./Documentation/images/img1.png)
