@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
+
 import { store, persistor } from "./redux/store";
-import { resolver, typeDefs } from "./graphql/resolvers";
 
 import "./index.css";
 import App from "./App";
@@ -22,15 +22,20 @@ const cache = new InMemoryCache();
 const client = new ApolloClient({
   link: httpLink,
   cache,
-  typeDefs,
-  resolver,
 });
 
-client.writeData({
-  data: {
-    cartHidden: true,
-  },
-});
+client
+  .query({
+    query: gql`
+      {
+        getCollectionsByTitle(title: "hats") {
+          id
+          title
+        }
+      }
+    `,
+  })
+  .then((resp) => console.log(resp));
 
 ReactDOM.render(
   <ApolloProvider client={client}>
