@@ -1,5 +1,5 @@
 import React, { useEffect, lazy, Suspense } from "react";
-import * as ServiceWorker from "./serviceWorker";
+
 import { connect } from "react-redux";
 import { selectCurrentUser } from "./redux/user/user.selector";
 import { createStructuredSelector } from "reselect";
@@ -53,6 +53,5 @@ const mapStateToProps = createStructuredSelector({
 const mapDispatchToProps = (dispatch) => ({
   checkUserSession: () => dispatch(checkUserSession()),
 });
-export default connect(mapStateToProps, mapDispatchToProps)(App);
 
-ServiceWorker.register();
+export default connect(mapStateToProps, mapDispatchToProps)(App);
