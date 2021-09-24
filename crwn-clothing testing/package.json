@@ -1,0 +1,16 @@
+{
+  "name": "crwn-clothing-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watch *.js",
+    "dev": "nodemon script2.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.2.0"
+  }
+}
