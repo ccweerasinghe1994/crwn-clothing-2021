@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 
@@ -7,9 +6,9 @@ class App extends React.Component {
     super(props);
     this.state = {
       monsters: [
-        { name: "frankenstein" },
-        { name: "dracula" },
-        { name: "zombie" },
+        { name: "frankenstein", id: "asd1" },
+        { name: "dracula", id: "asd2" },
+        { name: "zombie", id: "asd3" },
       ],
     };
   }
@@ -23,22 +22,12 @@ class App extends React.Component {
   };
 
   render() {
+    const { monsters } = this.state;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Hi
-          </a>
-          <div></div>
-          <button onClick={this.handleClick}>change name</button>
-        </header>
+        {monsters.map((monster) => (
+          <h1 key={monster.id}>{monster.name}</h1>
+        ))}
       </div>
     );
   }
