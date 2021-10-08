@@ -36,6 +36,7 @@ class App extends React.Component {
       };
     });
   };
+
   render() {
     const { monsters, searchField } = this.state;
 
@@ -44,6 +45,7 @@ class App extends React.Component {
     );
     return (
       <div className="App">
+        <h1>Monsters Rolodex</h1>
         <SearchBox
           placeholder={"search your monster"}
           handleChange={this.handleChange}
