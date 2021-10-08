@@ -24,3 +24,5 @@ yarn-error.log*
 
 .env
 client/package-lock.json
+.yarn
+react-basics/react-basics/.idea/workspace.xml
