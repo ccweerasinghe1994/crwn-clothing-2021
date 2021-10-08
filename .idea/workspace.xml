@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1832c58f-e395-4a31-9ea4-d225a7743950" name="Changes" comment="" />
+    <list default="true" id="1832c58f-e395-4a31-9ea4-d225a7743950" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/react-basics/react-basics/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-basics/react-basics/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +14,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1yAY3uPvM0UxtqN9bp3oDOwPCQc" />
   <component name="ProjectViewState">
@@ -22,6 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/react-basics/react-basics" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -38,6 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631695668845</updated>
       <workItem from="1631695671390" duration="594000" />
+      <workItem from="1633127326868" duration="93000" />
     </task>
     <servers />
   </component>
