@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.App > h1 {
+  font-family: "Monoton", cursive;
+  font-size: 72px;
+  color: rgba(225, 227, 231, 0.616);
+}
